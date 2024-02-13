@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/signUp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="/signup" method="post">
+        <div class="field">
+          <label for="username">Name: </label>
+          <input id="username" name="username" type="text" />
+        </div>
+        <div class="field">
+          <label for="email">Email: </label>
+          <input id="email" name="email" type="email" />
+        </div>
+
+        <div class="field">
+          <label for="password">Password: </label>
+          <input id="password" name="password" type="password" />
+        </div>
+
+        <div class="field">
+          <label for="confirm_password">Confirm Password: </label>
+          <input
+            id="confirm_password"
+            name="confirm_password"
+            type="password"
+          />
+        </div>
+        <button>submit</button>
+      </form>
+
+      <hr />
+      <h5>sign up with</h5>
+      <div class="otherOptions">
+        <div class="singUpOptions"><a href="loginViaGoogle">Google</a></div>
+        <div class="singUpOptions">Github</div>
+      </div>
+
+      <a href="/login">Already signed up? log in.</a>
+    </div>
+    <script src="/js/signUp.js"></script>
+  </body>
+</html>
